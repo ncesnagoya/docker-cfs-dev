@@ -4,7 +4,7 @@ LABEL maintainer "Mitsutaka Takada <mtakada@nces.i.nagoya-u.ac.jp>"
 LABEL description="core Flight System(cFS) development environment (Ubuntu:xenial)"
 
 ENV PACKAGES \
-    git python-pip python-qt4 cmake
+    git python-pip python-qt4 cmake doxygen
 RUN apt-get update \
     && apt-get -y install $PACKAGES \
     && pip install pyzmq \
